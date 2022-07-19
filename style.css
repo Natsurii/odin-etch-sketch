@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html {
+    font-size: 61.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.4rem;
+    background: #E5E9EC;
+    color: #fde74c;
+
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+.draw {
+    display: flex;
+    background: #F24333;
+    box-shadow: 0px 5px 16px -5px #2E3532;
+    padding: 15px;
+    border-radius: 30px;
+    gap: 25px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.controls{
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.title{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.area {
+    flex-shrink: 0;
+    display: flex;
+    border-radius: 30px;
+    background: #E5E9EC;
+    height: 500px;
+    width: 500px;
+    margin: 30px;
+}
+#grid-slider::-webkit-slider-runnable-track{
+    background: #fde74c;
+    border-radius: 5px;
+}
+
+#gridtext{
+    display: inline;
+}
+
+.selectors{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin-top: 1.5em;
+    justify-content: center;
+    gap: 5px;
+}
+.selectors > button{
+    background-color: #fde74c;
+    border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
+    color: #2E3532;
+    height: 75px;
+    width: 75px;
+}
+
+#colorWheel{
+    height: 75px;
+    width: 75px;
+    border-width: 0;
+    border: 1px solid #2E3532;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background: #fde74c;
+}
